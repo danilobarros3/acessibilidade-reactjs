@@ -1,40 +1,62 @@
-<<<<<<< HEAD
-# acessibilidade-reactjs
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Desenvolvendo uma Web Acessível
 
-## Getting Started
+Este projeto é um exemplo prático de como desenvolver uma web acessível, utilizando **Next.js**, **TypeScript**, **CSS Modules** e **Radix UI**. Ele aborda conceitos importantes de acessibilidade e segue as melhores práticas para garantir que pessoas com diferentes habilidades possam utilizar a aplicação de forma inclusiva.
 
-First, run the development server:
+## 💡 Objetivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Prover um guia prático sobre acessibilidade na web, destacando:
+- A importância de desenvolver tecnologias inclusivas.
+- O uso de boas práticas de design acessível.
+- Implementações técnicas para garantir conformidade com os princípios básicos da web definidos pela W3C.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js**: Framework React para renderização server-side e criação de aplicações web modernas.
+- **TypeScript**: Linguagem de tipagem estática que melhora a experiência de desenvolvimento e evita bugs.
+- **CSS Modules**: Estilização modular e isolada para componentes.
+- **Radix UI**: Biblioteca de componentes acessíveis para React.
+- **Head**: Gerenciamento de metadados para SEO e usabilidade.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📑 Estrutura do Código
 
-## Learn More
+O código contém os seguintes elementos:
 
-To learn more about Next.js, take a look at the following resources:
+### Header
+- Um logotipo com descrição `alt` para leitores de tela.
+- Um link para o GitHub com atributo `aria-label` para identificar a ação de forma clara.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Main
+- Um artigo explicativo com cabeçalhos estruturados (`<h1>`, `<h2>`, `<h3>`).
+- Parágrafos que promovem o entendimento do tema e destacam a acessibilidade como parte essencial do desenvolvimento web.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Footer
+- Um botão para abrir um modal com os termos de uso.
+- Componente acessível utilizando o **Radix UI** para diálogos, com foco gerenciado e conteúdo descritivo.
 
-## Deploy on Vercel
+## 🛠️ Funcionalidades
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Imagem com descrição**: Todas as imagens possuem o atributo `alt`, garantindo que leitores de tela possam identificar o conteúdo.
+- **Links claros**: Uso do atributo `aria-label` para descrever a funcionalidade dos links.
+- **Modal acessível**: Gerenciado por teclado e leitor de tela com suporte a sobreposição e fechamento seguro.
+- **Estrutura semântica**: Utilização de tags HTML apropriadas (`<header>`, `<main>`, `<footer>`) para organizar o conteúdo.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
->>>>>>> 8967758 (:sparkles: finish project)
+## 📖 Sobre Acessibilidade
+
+Acessibilidade é a prática de tornar a web utilizável por todas as pessoas, independentemente de suas capacidades. Este projeto aborda aspectos técnicos e culturais para garantir que a experiência do usuário seja inclusiva.
+
+### O que é acessibilidade?
+A acessibilidade vai além da conformidade com diretrizes técnicas. Ela envolve:
+- Inclusão de pessoas com deficiência em todas as fases do desenvolvimento.
+- Implementação de práticas recomendadas, como contraste de cores, navegação por teclado e descrição textual.
+- Promoção de uma filosofia de design que coloca as pessoas no centro da experiência.
+
+### Benefícios
+- **Legal**: Cumprimento de leis como o WCAG.
+- **Social**: Inclusão de um público mais amplo.
+- **Técnico**: Melhor SEO e desempenho geral.
+
+## 🖥️ Como Rodar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/danilobarros3/acessibilidade-reactjs.git
