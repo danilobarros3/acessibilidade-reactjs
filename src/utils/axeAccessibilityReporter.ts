@@ -1,9 +1,9 @@
-export async function axeAccessibilityReporter(){
+export async function axeAccessibilityReporter() {
   if (process.env.NODE_ENV === 'development' && typeof window !== 'undefined') {
-    const axe = await require(`@axe-core/react`)
-    const React = await require(`react`)
-    const ReactDOM = await require(`react-dom`)
+    const axe = await import('@axe-core/react');
+    const React = await import('react');
+    const ReactDOM = await import('react-dom');
 
-    axe(React, ReactDOM, 1000)
+    axe.default(React, ReactDOM, 1000);
   }
 }
